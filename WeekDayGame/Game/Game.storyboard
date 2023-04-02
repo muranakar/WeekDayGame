@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Y6W-OH-hqX">
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Game View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="GameViewController" customModule="WeekDayGame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9SO-6z-z6h" customClass="GADBannerView">
+                                <rect key="frame" x="35" y="47" width="320" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="X2Z-b8-JjJ"/>
+                                    <constraint firstAttribute="height" constant="50" id="nql-Ti-s6X"/>
+                                </constraints>
+                            </view>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="8zf-Lz-YWD">
+                                <rect key="frame" x="20" y="117" width="350" height="4"/>
+                            </progressView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jj0-Nb-SbX">
+                                <rect key="frame" x="40" y="170.99999999999997" width="310" height="310.33333333333326"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="lIp-zV-iNY">
+                                <rect key="frame" x="60" y="531.33333333333337" width="270" height="84.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ay-hB-JIu">
+                                        <rect key="frame" x="0.0" y="0.0" width="80" height="84.333333333333329"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerWeekDay:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="AC3-ir-lGi"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V0I-PS-PEg">
+                                        <rect key="frame" x="95" y="0.0" width="80" height="84.333333333333329"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="1"/>
+                                        <connections>
+                                            <action selector="answerWeekDay:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="j8H-Aq-s1s"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lIC-j2-aBs">
+                                        <rect key="frame" x="190" y="0.0" width="80" height="84.333333333333329"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerWeekDay:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="r88-Bb-5Nd"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="JB7-gO-693">
+                                <rect key="frame" x="20" y="645.66666666666663" width="350" height="84.333333333333371"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfh-91-lX9">
+                                        <rect key="frame" x="0.0" y="0.0" width="76.333333333333329" height="84.333333333333329"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerWeekDay:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="HaV-Ha-Gb2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjh-2l-DJa">
+                                        <rect key="frame" x="91.333333333333343" y="0.0" width="76.333333333333343" height="84.333333333333329"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerWeekDay:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="ueU-iB-eK2"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UAU-LH-yfX">
+                                        <rect key="frame" x="182.66666666666666" y="0.0" width="75.999999999999972" height="84.333333333333329"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="2"/>
+                                        <connections>
+                                            <action selector="answerWeekDay:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cS8-Ih-Kmb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jgd-4g-T8V">
+                                        <rect key="frame" x="273.66666666666669" y="0.0" width="76.333333333333314" height="84.333333333333329"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="answerWeekDay:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="eCh-cS-Egk"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Jj0-Nb-SbX" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="40" id="77n-J8-Dht"/>
+                            <constraint firstItem="JB7-gO-693" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="7TJ-mc-a9C"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="8zf-Lz-YWD" secondAttribute="trailing" constant="20" id="9fZ-4X-zkd"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Jj0-Nb-SbX" secondAttribute="trailing" constant="40" id="ItJ-KU-4zy"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="JB7-gO-693" secondAttribute="trailing" constant="20" id="O5S-mR-QxJ"/>
+                            <constraint firstItem="JB7-gO-693" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.1" id="Qj2-He-hWb"/>
+                            <constraint firstItem="9SO-6z-z6h" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="RGR-CX-xcl"/>
+                            <constraint firstItem="Jj0-Nb-SbX" firstAttribute="top" secondItem="8zf-Lz-YWD" secondAttribute="bottom" constant="50" id="RQP-yx-Phe"/>
+                            <constraint firstItem="lIp-zV-iNY" firstAttribute="top" secondItem="Jj0-Nb-SbX" secondAttribute="bottom" constant="50" id="UsJ-Ju-nUC"/>
+                            <constraint firstItem="JB7-gO-693" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="WJj-ig-zt8"/>
+                            <constraint firstItem="JB7-gO-693" firstAttribute="top" secondItem="lIp-zV-iNY" secondAttribute="bottom" constant="30" id="eMh-ID-mVn"/>
+                            <constraint firstItem="8zf-Lz-YWD" firstAttribute="top" secondItem="9SO-6z-z6h" secondAttribute="bottom" constant="20" id="fmk-Lb-JD0"/>
+                            <constraint firstItem="8zf-Lz-YWD" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="20" id="hQz-cE-Ufj"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="lIp-zV-iNY" secondAttribute="trailing" constant="60" id="iGs-gX-Rzg"/>
+                            <constraint firstItem="lIp-zV-iNY" firstAttribute="height" secondItem="5EZ-qb-Rvc" secondAttribute="height" multiplier="0.1" id="nTE-bD-BRL"/>
+                            <constraint firstItem="lIp-zV-iNY" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="60" id="nd6-OI-q9t"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="JB7-gO-693" secondAttribute="bottom" constant="80" id="obX-0R-HQh"/>
+                            <constraint firstItem="9SO-6z-z6h" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="qtC-bH-kBC"/>
+                            <constraint firstItem="lIp-zV-iNY" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="xfd-es-417"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="answerTimerProgressView" destination="8zf-Lz-YWD" id="tLL-Yb-I7c"/>
+                        <outlet property="bannerView" destination="9SO-6z-z6h" id="ALP-cW-ags"/>
+                        <outlet property="quizTextLabel" destination="Jj0-Nb-SbX" id="Wo1-Dx-uIh"/>
+                        <outlet property="weekDayAnswerButton1" destination="6Ay-hB-JIu" id="c3w-kj-Nce"/>
+                        <outlet property="weekDayAnswerButton2" destination="V0I-PS-PEg" id="p1N-ru-JK2"/>
+                        <outlet property="weekDayAnswerButton3" destination="lIC-j2-aBs" id="bKq-73-Tlj"/>
+                        <outlet property="weekDayAnswerButton4" destination="qfh-91-lX9" id="8fG-Nx-Ehq"/>
+                        <outlet property="weekDayAnswerButton5" destination="cjh-2l-DJa" id="Lwm-lb-NML"/>
+                        <outlet property="weekDayAnswerButton6" destination="UAU-LH-yfX" id="fQM-q3-cUL"/>
+                        <outlet property="weekDayAnswerButton7" destination="Jgd-4g-T8V" id="W0o-sH-hmv"/>
+                        <segue destination="BkU-Sa-QjG" kind="show" identifier="result" destinationCreationSelector="makeResultVCWithCoder:sender:segueIdentifier:" id="bsp-zD-UDU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.76923076923077" y="-34.123222748815166"/>
+        </scene>
+        <!--Result-->
+        <scene sceneID="H2e-sc-IFL">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Result" id="BkU-Sa-QjG" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="rS5-K7-tvK"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Cl5-m4-fzv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="807" y="-28"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
